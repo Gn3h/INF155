@@ -1,0 +1,4 @@
+# ninja log v7
+1	16	1768277754093777347	CMakeFiles/my_program.dir/src/math_utils.c.o	a716cf1826ca7527
+1	18	1768277754091336343	CMakeFiles/my_program.dir/src/main.c.o	25b1e97cb91e6cf
+19	33	1768277754110336646	my_program	974f8eb9f39355d7
