@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define LIGNES 4
-#define COLONNES 4
+#define LIGNES 3
+#define COLONNES 3 
 
 void afficher_tableau2d(int tableau[][COLONNES], int nb_lignes, int nb_cols) {
     for (int i = 0; i < nb_lignes; i++) {
@@ -13,27 +13,19 @@ void afficher_tableau2d(int tableau[][COLONNES], int nb_lignes, int nb_cols) {
     }
 }
 
-int somme_ligne(int tableau[][COLONNES], int nb_colonnes, int indice_ligne) {
-    int somme = 0;
-    for (int j = 0; j < nb_colonnes; j++) {
-        somme += tableau[indice_ligne][j];
-    }
-    return somme;
-}
-
-int somme_colonne(int tableau[][COLONNES], int nb_lignes, int indice_colonne) {
-    int somme = 0;
+void multiplier_scalaire(int tableau[][COLONNES], int nb_lignes, int nb_colonnes, int k) {
     for (int i = 0; i < nb_lignes; i++) {
-        somme += tableau[i][indice_colonne];
+        for (int j = 0; j < nb_colonnes; j++) {
+            tableau[i][j] *= k;
+        }
     }
-    return somme;
 }
 
 int main(void) {
     int tableau[LIGNES][COLONNES] = {{0}};
     int nb_lignes = LIGNES;
     int nb_colonnes = COLONNES;
-    int somme = 0;
+    int fact_mult;
 
     // Saisir les valeurs du tableau manuellement
     printf("Entrez les valeurs du tableau %dx%d ligne par ligne : ", nb_lignes, nb_colonnes);
@@ -42,17 +34,18 @@ int main(void) {
             scanf("%d", &tableau[i][j]);
     }
 
+    // Saisir un facteur multiplicatif (k)
+    printf("Saisir un facteur multiplicatif (k) : ");
+    scanf("%d", &fact_mult);
+
+    // Affichage du tableau originale
+    afficher_tableau2d(tableau, nb_lignes, nb_colonnes);
+    printf("\n");
+
+    // Affichage tableau modifié
+    multiplier_scalaire(tableau, nb_lignes, nb_colonnes, fact_mult);
     afficher_tableau2d(tableau, nb_lignes, nb_colonnes);
 
-    // Affichez la somme de chaque ligne
-    for (int i = 0; i < nb_lignes; i++) {
-        printf("La somme de la ligne %d : %d\n", i, somme_ligne(tableau, nb_colonnes, i));
-    }
-    
-    // Affichez la somme de chaque colonne
-    for (int j = 0; j < nb_colonnes; j++) {
-        printf("La somme de la colonne %d : %d\n", j, somme_colonne(tableau, nb_lignes, j));
-    }
     return EXIT_SUCCESS;
 }
 //DONE
