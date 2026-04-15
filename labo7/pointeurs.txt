@@ -1,0 +1,52 @@
+Pointer : a "variable-like" reference that holds a memory address to another variable, array, etc.
+            some tasks are performed more easily with pointers
+            * = indirection operator (value at address)
+
+            A variable that points to the memory address of another variable.
+            Benefit: They help avoid wasting memory by allowing you to pass
+            the address of large data structure instead of copying the entire data.
+
+
+int x = 4;
+address : 0x1000
+value : 0x4
+english : "integer named x is set to 4"
+
+int *pointeur_x = &x;
+address : 0x1004
+value : 0x1000
+english : "integer pointer named pointeur_x is set to the address of x"
+
+
+En ayant un pointeur, on a un moyen d'acceder x par reference plutot que par valeur.
+
+Copie d'une valeur
+int y = *pointeur_x;
+english : integer named y is set to the thing pointed to by pointeur_x"
+
+
+int age = 21;
+int *pAge = &age;
+
+printf("address of age : %p\n", &age);  ->  0000000612F231
+printf("value of pAge : %d\n", pAge);   ->  0000000612F231
+
+printf("size of age : %d\n", sizeof(age));  ->  4 bytes
+printf("size of pAge : %d\n", sizeof(pAge));    ->  8 bytes
+
+printf("value of age : %d\n", age); ->  21
+printf("value of storred address : %d\n", *pAge); ->  21   //dereferencing
+
+
+
+void printAge(int *pAge) {
+    printf("you are %d years old", *pAge);  //dereferencing
+}
+
+int main(void) {
+    int age = 21;
+    int *pAge = NULL;  // good practice to assign NULL if declaring a pointer
+    *pAge = &age;
+    printAge(pAge);
+    printAge(&age); // same result
+}
