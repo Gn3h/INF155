@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/hengster/Desktop/INF155/build",
+  "command": "/usr/bin/gcc  -I/home/hengster/Desktop/INF155/project_test/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/my_program.dir/src/main.c.o -c /home/hengster/Desktop/INF155/project_test/src/main.c",
+  "file": "/home/hengster/Desktop/INF155/project_test/src/main.c",
+  "output": "CMakeFiles/my_program.dir/src/main.c.o"
+},
+{
+  "directory": "/home/hengster/Desktop/INF155/build",
+  "command": "/usr/bin/gcc  -I/home/hengster/Desktop/INF155/project_test/include -g -std=gnu11 -Wall -Wextra -Wpedantic -o CMakeFiles/my_program.dir/src/math_utils.c.o -c /home/hengster/Desktop/INF155/project_test/src/math_utils.c",
+  "file": "/home/hengster/Desktop/INF155/project_test/src/math_utils.c",
+  "output": "CMakeFiles/my_program.dir/src/math_utils.c.o"
+}
+]

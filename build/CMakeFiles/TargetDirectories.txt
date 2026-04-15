@@ -1,0 +1,3 @@
+/home/hengster/Desktop/INF155/build/CMakeFiles/my_program.dir
+/home/hengster/Desktop/INF155/build/CMakeFiles/edit_cache.dir
+/home/hengster/Desktop/INF155/build/CMakeFiles/rebuild_cache.dir
