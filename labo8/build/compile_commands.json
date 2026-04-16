@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/hengster/Desktop/INF155/labo8/build",
+  "command": "/usr/bin/cc  -I/home/hengster/Desktop/INF155/labo8/include -g -std=gnu11 -o CMakeFiles/labo8.dir/src/main.c.o -c /home/hengster/Desktop/INF155/labo8/src/main.c",
+  "file": "/home/hengster/Desktop/INF155/labo8/src/main.c",
+  "output": "CMakeFiles/labo8.dir/src/main.c.o"
+},
+{
+  "directory": "/home/hengster/Desktop/INF155/labo8/build",
+  "command": "/usr/bin/cc  -I/home/hengster/Desktop/INF155/labo8/include -g -std=gnu11 -o CMakeFiles/labo8.dir/src/strutils.c.o -c /home/hengster/Desktop/INF155/labo8/src/strutils.c",
+  "file": "/home/hengster/Desktop/INF155/labo8/src/strutils.c",
+  "output": "CMakeFiles/labo8.dir/src/strutils.c.o"
+}
+]

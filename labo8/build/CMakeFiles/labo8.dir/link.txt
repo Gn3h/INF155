@@ -1,0 +1,1 @@
+/usr/bin/cc -g -Wl,--dependency-file=CMakeFiles/labo8.dir/link.d CMakeFiles/labo8.dir/src/main.c.o CMakeFiles/labo8.dir/src/strutils.c.o -o labo8
